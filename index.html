@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.icoo">
+
+    <title>Sample form </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/template.css" rel="stylesheet">
+  </head>
+
+  <body>
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+			<div class="container">
+			  <a class="navbar-brand" href="#">Navbar</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+
+
+
+				<div class="collapse navbar-collapse row" id="navbarsExampleDefault">
+				   <ul class="navbar-nav mr-auto col">
+					  <li class="nav-item">
+						<a class="nav-link" href="#">Products <span class="sr-only">(current)</span></a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#">Claims</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#">Contact Us</a>
+					  </li>
+					</ul>
+					
+					
+					<ul class="navbar-nav float-right">
+					  <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ontario</a>
+						<div class="dropdown-menu" aria-labelledby="dropdown01">
+						  <a class="dropdown-item" href="#">Toronto</a>
+						  <a class="dropdown-item" href="#">Brampton</a>
+						</div>
+					  </li>
+					  <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EN</a>
+						<div class="dropdown-menu" aria-labelledby="dropdown01">
+						  <a class="dropdown-item" href="#">FR</a>
+						</div>
+					  </li>
+					  <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Search</a>
+						<form class="dropdown-menu" aria-labelledby="dropdown01">
+						  <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+						  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+						</form>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#">Login</a>
+					  </li>
+					  
+					</ul>	
+					
+
+					
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+    <main role="main" class="container-fluid">
+		<div class="container"><div class="py-5"></div>
+
+		  <div class="row">
+
+			<section class="col-md-9">
+				<h3>Tell Us Abou Yourself</h3>
+				<p>Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+			
+			
+			  <h3 class="mb-3">Personal Information</h3>
+			  <form class="needs-validation" novalidate="">
+			  
+				<div class="row">
+				
+				  <div class="col-md-3 mb-3">
+					<select class="custom-select d-block w-100" id="title" required="">
+					  <option value="">Title*</option>
+					  <option>Manager</option>
+					</select>
+					<div class="invalid-feedback">
+					  Please select a title.
+					</div>
+				  </div>	
+				  
+				  <div class="col-md-3 mb-3">
+					<input type="text" class="form-control" id="firstName" placeholder="First name*" value="" required="">
+					<div class="invalid-feedback">
+					  Valid first name is required.
+					</div>
+				  </div>				
+				
+				  <div class="col-md-3 mb-3">
+					<input type="text" class="form-control" id="firstName" placeholder="Middle initials" value="">
+				  </div>
+				  
+				  <div class="col-md-3 mb-3">
+					<input type="text" class="form-control" id="lastName" placeholder="Last name*" value="" required="">
+					<div class="invalid-feedback">
+					  Valid last name is required.
+					</div>
+				  </div>
+				  
+				</div>
+				
+				<div class="row">
+				
+				  <div class="col-md-4 mb-3">
+					  <input type="email" class="form-control" id="email" placeholder="Email Address*" value="" required="">
+					  <div class="invalid-feedback">
+						Please enter a email address.
+					  </div>
+				  </div>	
+				  
+				  <div class="col-md-4 mb-3">
+					<input type="text" class="form-control" id="firstName" placeholder="Date of Birth*" value="" required="">
+					<div class="invalid-feedback">
+					  Valid date of birth is required.
+					</div>
+				  </div>				
+				
+				  <div class="col-md-4 mb-3">
+					<input type="text" class="form-control" id="SIN" placeholder="Social Insurence Number*" value=""  required="">
+					<div class="invalid-feedback">
+					  Valid Social Insurence Number is required.
+					</div>
+				  </div>
+				  
+				</div>				
+				
+
+				<hr class="mb-4">
+				<button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+			  </form>
+			</section>
+			
+			
+			<aside class="col-md-3">
+				<p>You are applying for:</p>
+				<h3>TD travel Medical Insurence</h3>
+				<a href="/" class="btn btn-success">See More Coverage Options</a>
+			</aside>
+		  </div>
+
+		</div>
+    </main><!-- /.container -->
+	
+	  <footer class="my-5 pt-5 text-muted text-center text-small">
+		<p class="mb-1">© 2017-2018 Company Name</p>
+		<ul class="list-inline">
+		  <li class="list-inline-item"><a href="#">Privacy</a></li>
+		  <li class="list-inline-item"><a href="#">Terms</a></li>
+		  <li class="list-inline-item"><a href="#">Support</a></li>
+		</ul>
+	  </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+  </body>
+</html>
