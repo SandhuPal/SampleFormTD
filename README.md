@@ -5,4 +5,4 @@ Bootstrap 4 frameworks libraries implemented.
 Responsive web page for all devices.
 
 
-https://github.com/formvalidation/formvalidation/blob/info/screenshots/foundation.gif
+<a target="_blank" href="/formvalidation/formvalidation/blob/info/screenshots/bootstrap.gif"><img src="/formvalidation/formvalidation/raw/info/screenshots/bootstrap.gif" alt="Validating Bootstrap form" style="max-width:100%;"></a>
