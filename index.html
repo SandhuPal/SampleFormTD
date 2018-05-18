@@ -5,29 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="favicon.icoo">
+    <link rel="icon" href="favicon.ico">
 
-    <title>Sample form </title>
+    <title>TD Insurence form </title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <!-- Custom styles for this template & Awesome fonts -->
     <link href="assets/css/template.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   </head>
 
-  <body>
+  <body class="td-form">
 	<header>
-		<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top ">
 			<div class="container">
-			  <a class="navbar-brand" href="#">Navbar</a>
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			  </button>
-
-
-
-				<div class="collapse navbar-collapse row" id="navbarsExampleDefault">
+			 <!-- Mobile Hamburger Menu -->
+			  <button class="navbar-toggler"  data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left"><span class="navbar-toggler-icon"></span></button>
+			  
+			<!-- Logo -->
+			<a class="navbar-brand td-logo" href="#">TD</a>
+			<a class="nav-link d-block d-sm-block d-md-none" href="#"><i class="fa fa-user-lock"></i></a>
+			
+				<!-- Menu Starts here -->
+				<div class="navbar-collapse navbar-inverse side-collapse in" id="navbarsExampleDefault">
 				   <ul class="navbar-nav mr-auto col">
 					  <li class="nav-item">
 						<a class="nav-link" href="#">Products <span class="sr-only">(current)</span></a>
@@ -43,132 +45,145 @@
 					
 					<ul class="navbar-nav float-right">
 					  <li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ontario</a>
+						<a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ontario <i class="fa fa-chevron-down"></i></a>
 						<div class="dropdown-menu" aria-labelledby="dropdown01">
 						  <a class="dropdown-item" href="#">Toronto</a>
 						  <a class="dropdown-item" href="#">Brampton</a>
 						</div>
 					  </li>
 					  <li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EN</a>
+						<a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EN <i class="fa fa-chevron-down"></i></a>
 						<div class="dropdown-menu" aria-labelledby="dropdown01">
 						  <a class="dropdown-item" href="#">FR</a>
 						</div>
 					  </li>
 					  <li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Search</a>
+						<a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search"></i></a>
 						<form class="dropdown-menu" aria-labelledby="dropdown01">
-						  <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-						  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+						  <div class="row ml-0 mr-0">
+							  <input class="form-control mr-sm-2 col-md-7 col-lg-7" type="text" placeholder="Search" aria-label="Search">
+							  <button class="btn btn-outline-success my-2 my-sm-0 col-md-4 col-lg-4" type="submit">Search</button>
+						  </div>
 						</form>
 					  </li>
-					  <li class="nav-item">
-						<a class="nav-link" href="#">Login</a>
+					  <li class="nav-item d-none d-sm-none d-md-block">
+						<a class="nav-link" href="#"><i class="fa fa-user-lock"></i> Login</a>
 					  </li>
 					  
 					</ul>	
-					
 
-					
 				</div>
 			</div>
 		</nav>
 	</header>
 	
+	<!-- Main Content Starts here -->
     <main role="main" class="container-fluid">
-		<div class="container"><div class="py-5"></div>
+		<div class="container side-collapse-container"><div class="py-5"></div>
 
 		  <div class="row">
+			<!-- Left section starts here -->
+			<section class="col-sm-12 col-md-12 col-lg-9 mb-5">
+				<h3 class="text-center text-sm-left">Tell Us About Yourself</h3>
+				<p>Thanks for choosing TD Insurence! In order to safely set up your new accounts and services, Please Tell Us About Yourself<br /><br /></p>
 
-			<section class="col-md-9">
-				<h3>Tell Us Abou Yourself</h3>
-				<p>Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
-			
-			
-			  <h3 class="mb-3">Personal Information</h3>
+			  <h3 class="mb-3 text-center text-sm-left">Personal Information</h3>
+			  <!-- Form Starts Here -->
 			  <form class="needs-validation" novalidate="">
 			  
-				<div class="row">
+				<div class="form-group row mb-0 mb-sm-4 mb-md-4">
 				
-				  <div class="col-md-3 mb-3">
+				  <div class="col-md-2 mb-5 mb-sm-5 mb-md-3">
 					<select class="custom-select d-block w-100" id="title" required="">
 					  <option value="">Title*</option>
 					  <option>Manager</option>
 					</select>
-					<div class="invalid-feedback">
-					  Please select a title.
-					</div>
+					<div class="invalid-feedback">Please select a title.</div>
 				  </div>	
 				  
-				  <div class="col-md-3 mb-3">
+				  <div class="col-md-3 mb-5 mb-sm-5 mb-md-3">
 					<input type="text" class="form-control" id="firstName" placeholder="First name*" value="" required="">
-					<div class="invalid-feedback">
-					  Valid first name is required.
-					</div>
+					<div class="invalid-feedback">Valid first name is required.</div>
 				  </div>				
 				
-				  <div class="col-md-3 mb-3">
+				  <div class="col-md-3 mb-5 mb-sm-5 mb-md-3">
 					<input type="text" class="form-control" id="firstName" placeholder="Middle initials" value="">
 				  </div>
 				  
-				  <div class="col-md-3 mb-3">
+				  <div class="col-md-4 mb-5 mb-sm-5 mb-md-3">
 					<input type="text" class="form-control" id="lastName" placeholder="Last name*" value="" required="">
-					<div class="invalid-feedback">
-					  Valid last name is required.
-					</div>
+					<div class="invalid-feedback">Valid last name is required.</div>
 				  </div>
 				  
 				</div>
 				
-				<div class="row">
+				<div class="form-group row">
 				
-				  <div class="col-md-4 mb-3">
-					  <input type="email" class="form-control" id="email" placeholder="Email Address*" value="" required="">
-					  <div class="invalid-feedback">
-						Please enter a email address.
-					  </div>
+				  <div class="col-md-5 mb-5 mb-sm-5 mb-md-3">
+					  <input type="email" class="form-control float-left  col-11 col-sm-11 col-md-10 col-xl-11" id="email" placeholder="Email Address*" value="" required=""> 
+					  <i class="far fa-question-circle"  data-toggle="tooltip" data-placement="top" title="Tooltip on top"></i>
+					  <div class="invalid-feedback">Please enter a email address.</div>
 				  </div>	
 				  
-				  <div class="col-md-4 mb-3">
+				  <div class="col-md-3 mb-5 mb-sm-5 mb-md-3">
 					<input type="text" class="form-control" id="firstName" placeholder="Date of Birth*" value="" required="">
-					<div class="invalid-feedback">
-					  Valid date of birth is required.
-					</div>
+					<div class="invalid-feedback">Valid date of birth is required.</div>
 				  </div>				
 				
-				  <div class="col-md-4 mb-3">
-					<input type="text" class="form-control" id="SIN" placeholder="Social Insurence Number*" value=""  required="">
-					<div class="invalid-feedback">
-					  Valid Social Insurence Number is required.
-					</div>
+				  <div class="col-md-4 mb-3 mb-sm-3 mb-md-3">
+					<input type="text" class="form-control float-left col-11 col-sm-11 col-md-10 col-xl-11" id="SIN" placeholder="Social Insurence Number*" value=""  required="">
+					  <i class="far fa-question-circle"  data-toggle="tooltip" data-placement="top" title="Tooltip on top"></i>
+					<div class="invalid-feedback">Valid Social Insurence Number is required.</div>
 				  </div>
 				  
-				</div>				
-				
+				</div>	
 
-				<hr class="mb-4">
-				<button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+				<div class="col-12 col-md-12 mt-4">
+					<button class="btn btn-success float-right mr-2" type="submit">Submit</button>		
+					<button class="btn btn-danger float-right mr-4" type="Cancel">Cancel</button>
+				</div>
+
+			
 			  </form>
 			</section>
 			
-			
-			<aside class="col-md-3">
+			<!-- Righr side starts here -->
+			<aside class="col-sm-12 col-md-12 col-lg-3">
 				<p>You are applying for:</p>
-				<h3>TD travel Medical Insurence</h3>
-				<a href="/" class="btn btn-success">See More Coverage Options</a>
+				<h3 class="text-center text-sm-left">TD* travel Medical Insurence</h3>
+				<a href="/" class="btn btn-success col">See More Coverage Options</a>
 			</aside>
 		  </div>
 
 		</div>
     </main><!-- /.container -->
 	
-	  <footer class="my-5 pt-5 text-muted text-center text-small">
-		<p class="mb-1">© 2017-2018 Company Name</p>
-		<ul class="list-inline">
-		  <li class="list-inline-item"><a href="#">Privacy</a></li>
-		  <li class="list-inline-item"><a href="#">Terms</a></li>
-		  <li class="list-inline-item"><a href="#">Support</a></li>
-		</ul>
+	<!-- Footer Starts Here -->
+	  <footer class="my-5 pt-2 text-muted text-center">
+		<div class="container">
+			<h2>
+				Need to talk to us directly?
+				<a href="/customer-service/contact-us" target="_self" >Contact us <i class="fa fa-chevron-right"></i></a>
+			</h2>
+			<div class="col-md-12">
+			<!-- Footer Links -->
+				<ul class="footer--links">
+					<li><a href="/">Privacy and Security</a></li>
+					<li><a href="/">Legal</a></li>
+					<li><a href="/">Accessibility</a></li>
+					<li><a href="/">About Us</a></li>
+					<li><a href="/">Careers</a></li>
+				</ul>
+			</div>
+			<!-- Social Media -->
+			<ul class="social--media">
+				<li><a href="/"><i class="fab fa-facebook-f"></i></a></li>
+				<li><a href="/"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="/"><i class="fab fa-youtube"></i></a></li>
+				<li><a href="/"><i class="fa fa-rss"></i></a></li>
+			</ul>
+
+		</div>
 	  </footer>
 
     <!-- Bootstrap core JavaScript
@@ -198,6 +213,19 @@
           });
         }, false);
       })();
+	  
+	<!-- Tooltip Js -->
+	$('[data-toggle="tooltip"]').tooltip()
+
+	<!-- Mobile slide menu js -->
+	var sideslider = $('[data-toggle=collapse-side]');
+	var sel = sideslider.attr('data-target');
+	var sel2 = sideslider.attr('data-target-2');
+	sideslider.click(function(event){
+		$(sel).toggleClass('in');
+		$(sel2).toggleClass('out');
+	});
+	
     </script>
   </body>
 </html>
