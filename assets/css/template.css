@@ -1,9 +1,89 @@
-body{background-color:#1a5336; color:#000; font-size:1.1rem; font-weight:300}
+body{background-color:#1a5336; color:#000; font-size:1.122rem; font-weight:300}
+
+/*Common css override*/
+.td-form .btn{font-weight:300}
+.td-form nav{background-color:#12422b; min-height:70px}
+.td-form h3{color:#757575; font-size:1.4rem; padding:2rem 0 .8rem; font-weight:300}
+
+.td-form .container-fluid{background-color:#efeff4; padding-bottom:2rem}
 
 
-nav{background-color:#12422b}
+/*TD Logo css*/
+.td-form .td-logo{background:url('../img/TD_LOGO.png') no-repeat left 6px; text-indent:-9999px; width:170px; min-height:39px; margin-right: auto;  background-size:170px}
+.td-form .navbar-dark .navbar-toggler{border:0; outline:0}
+
+@media (min-width: 768px) {
+	.td-form .td-logo{  margin-right:60px; width:45px; background-size:220px; background-position:left 0; }
+}
+@media (min-width: 992px) {
+	.td-form .td-logo{margin-right:70px; width:220px;}
+}
 
 
-.container-fluid{background-color:#efeff4; padding-bottom:3rem}
+/*Main menu css*/
+header nav .navbar-nav .nav-link{color:#fff!important; font-size:1rem;}
+header nav .dropdown-menu .dropdown-item{color:#666; padding-left:10px;}
+header nav .dropdown-toggle::after{display:none}
+header nav .navbar-nav.float-right li input[type="text"]{border-top:1px solid #ced4da;}
+header nav .fa-user-lock{color:#fff; font-size:.9rem}
 
-h3{color:#757575; font-size:1.6rem; padding:1.8rem 0 .6rem; font-weight:300}
+@media (min-width: 768px) {
+	header nav .navbar-nav.mr-auto .nav-link{padding:0 15px!important}
+	header nav .navbar-nav.float-right li a{padding:0 15px!important}
+	header nav .navbar-nav.float-right i{font-size: .8rem;}
+	header nav .dropdown-menu {border-top-right-radius: 0; border-top-left-radius: 0; border-top:0; top:95%; left:-1px;}
+	header nav .navbar-nav li.show > a.nav-link{background:#fff; color:#1a5336!important; border: 1px solid rgba(0,0,0,.1); border-bottom:0}
+	header nav form.dropdown-menu {padding:12px; width:390px; right:-1px; left:auto}
+}
+@media (min-width: 992px) {
+	header nav .navbar-nav.mr-auto .nav-link{padding:0 24px!important}
+}
+@media screen and (max-width: 767px) {
+	header nav .dropdown-menu{background:rgba(255,255,255,.9)}
+	header nav .navbar-collapse ul{float:left!important; width:100%; padding-right:0}
+	header nav .navbar-collapse ul li{padding:5px 0; margin:5px 0; border-bottom:1px solid rgba(255,255,255,.611)}
+	header nav .navbar-collapse .navbar-nav li a{padding:5px 30px;}	
+	header nav form.dropdown-menu {padding:12px;}
+	
+    header nav .side-collapse-container.out{left:100%;}
+    header nav .side-collapse {top:67px; bottom:0; left:0; width:100%; position:fixed; overflow:hidden; transition:width .4s; background-color:rgba(18,66,43,.911);}
+    header nav .side-collapse.in {width:0;}
+}
+
+/*Footer css starts*/
+footer .container{background:url('../img/footer_seat_bg.png') no-repeat center bottom; background-size: 318px 283px; padding-bottom:250px}
+footer h2{color:#fff; font-size:1.5rem; font-weight:300}
+footer h2 a{color:#28a745; display:block}
+footer h2 a .fa{font-size: 25px;}
+footer ul{display:inline-block; margin:0 auto; clear:both; padding:0}
+footer ul li{display:inline-block; list-style:none}
+footer ul li a{color:#fff}
+footer a:hover{color:#28a745; text-decoration:underline}
+
+footer .footer--links{border-top:1px solid #28a745; border-bottom:1px solid #28a745; padding:1rem 0; margin:2rem 0; display:block}
+footer .footer--links li{display:block; padding:7px 0}
+footer .footer--links a{padding:0 15px;}
+footer .social--media a{border:2px solid #28a745; border-radius:50%; width:45px; margin:0 8px; height:45px; display:inline-block; font-size:20px; line-height:37px}
+
+@media (min-width: 768px) {
+	footer h2{font-size:2.288rem;}
+	footer .footer--links{padding:2rem 0; display:inline-block;}
+	footer h2 a,
+	footer .footer--links li{display:inline-block;}
+	footer .social--media a{width:65px; margin:0 18px; height:65px; font-size:30px; line-height:57px}
+}
+@media (min-width: 992px) {
+	footer .container{background:url('../img/footer_seat_bg.png') no-repeat -50px top; background-size: 303px 302px;}
+}
+@media (min-width: 1200px) {
+	footer .container{background:url('../img/footer_seat_bg.png') no-repeat -50px top; background-size: 383px 342px;}
+}
+
+/* form */
+.td-form input[type="email"],
+.td-form input[type="text"],
+.td-form select.custom-select{border-radius:0; border-top:0}
+.td-form button[type="Cancel"]{background:#c65415}
+.td-form button[type="Cancel"]:hover{background:#b4460a}
+.td-form .fa-question-circle{color:#28a745; font-weight:300; margin:10px 0 0 3px}
+.td-form select, *::-webkit-input-placeholder {font-weight:300!important;}
